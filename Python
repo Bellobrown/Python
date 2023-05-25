@@ -1,0 +1,37 @@
+print('Welcome user\n""insert your pin')
+
+a = 76000.00
+
+b = int(input('Your pin: '))
+
+c = input('Do you want to Withdraw(1) or Transfer(2): ')
+
+if c == '1':
+
+    f = int(input('How much do you want to withdraw: '))
+
+    if f < a:
+
+        print(f'Please enter the amount you want to withdraw: {f}')
+
+        print(f'Your balance now is {a - f}')
+
+    else:
+
+        print('Incorrect pin')
+
+elif c == '2':
+
+    w = int(input('Enter receiver\'s account number: '))
+
+    e = int(input('Enter the amount: '))
+
+    if e <= a:
+
+        print('Transfer successful')
+
+        print(f'Your account balance is now {a - e}')
+
+    else:
+
+        print('Insufficient funds for the transfer')
